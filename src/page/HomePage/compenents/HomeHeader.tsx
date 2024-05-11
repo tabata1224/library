@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Drawer,
   IconButton,
   InputAdornment,
@@ -69,6 +70,15 @@ function HomeHeader() {
           ),
         }}
       />
+
+      {/* API Gateway呼び出し用テストボタン */}
+      <Button
+        onClick={() => {
+          alert("clicked");
+        }}
+      >
+        API Gateway
+      </Button>
     </>
   );
 }
