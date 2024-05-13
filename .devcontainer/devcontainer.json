@@ -10,7 +10,11 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true
       },
-      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "donjayamanne.githistory"
+      ]
     }
   }
   // Features to add to the dev container. More info: https://containers.dev/features.

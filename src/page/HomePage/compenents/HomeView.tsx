@@ -1,9 +1,24 @@
-import HomeHeader from "./HomeHeader";
+import SearchIcon from "@mui/icons-material/Search";
+import { InputAdornment, TextField } from "@mui/material";
+import ToshoHeader from "../../../components/ToshoHeader";
 
 function HomeView() {
   return (
     <header>
-      <HomeHeader />
+      <ToshoHeader title="ホーム" />
+      <TextField
+        variant="outlined"
+        fullWidth
+        placeholder="検索"
+        InputProps={{
+          startAdornment: (
+            <InputAdornment position="start">
+              {/* <AccountCircle /> */}
+              <SearchIcon />
+            </InputAdornment>
+          ),
+        }}
+      />
     </header>
   );
 }
