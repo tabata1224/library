@@ -1,6 +1,7 @@
 import SearchIcon from "@mui/icons-material/Search";
 import { InputAdornment, TextField } from "@mui/material";
 import ToshoHeader from "../../../components/ToshoHeader";
+import ApiButton from "../../../components/ApiButton";
 
 function HomeView() {
   return (
@@ -19,6 +20,8 @@ function HomeView() {
           ),
         }}
       />
+      {/* API Gateway呼び出し用テストボタン */}
+      <ApiButton />
     </header>
   );
 }
