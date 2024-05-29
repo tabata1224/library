@@ -7,7 +7,7 @@ function ApiButton() {
       const response = await axios.get(
         "https://ahdf3t0dt8.execute-api.ap-northeast-1.amazonaws.com/library-test"
       );
-      alert(response.data.body[0].title.S);
+      alert(response.data.body);
     } catch (error) {
       console.error("API Call Error:", error);
     }
