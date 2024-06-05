@@ -34,7 +34,7 @@ function HomeView() {
       />
       {/* API Gateway呼び出し用テストボタン */}
       <ApiButton />
-      <ImageList sx={{ width: 500, height: 450 }} cols={2}>
+      <ImageList cols={2}>
         {/* {itemData.map((item) => (
           <ImageListItem key={item.img}>
             <img
