@@ -12,7 +12,7 @@ import useHomeLogic from "../hooks/HomeLogic";
 import ToshoDialog from "../../../components/ToshoDialog";
 
 function HomeView() {
-  const { isOpen, handleDialogOpenOnClick, handleDialogCloseOnClick } =
+  const { isOpen, handleDialogOpenOnClick, handleYesOnClick, handleNoOnClick } =
     useHomeLogic();
   return (
     <>
@@ -62,7 +62,8 @@ function HomeView() {
       <ToshoDialog
         open={isOpen}
         title="本の貸し出し"
-        onClick={handleDialogCloseOnClick}
+        onYesClick={handleYesOnClick}
+        onNoClick={handleNoOnClick}
         context="本を借りますか"
       />
     </>

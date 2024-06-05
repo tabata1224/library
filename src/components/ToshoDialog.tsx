@@ -11,13 +11,14 @@ import {
 type ToshoDialogConponentsProps = {
   title: string;
   context: string;
-  onClick: () => void;
+  onYesClick: () => void;
+  onNoClick: () => void;
 };
 
 type ToshoDialogProps = DialogProps & ToshoDialogConponentsProps;
 
 function ToshoDialog(props: ToshoDialogProps) {
-  const { open, title, context, onClick } = props;
+  const { open, title, context, onYesClick, onNoClick } = props;
   return (
     <Dialog open={open}>
       <DialogTitle>{title}</DialogTitle>
@@ -25,8 +26,8 @@ function ToshoDialog(props: ToshoDialogProps) {
         <DialogContentText>{context}</DialogContentText>
       </DialogContent>
       <DialogActions>
-        <Button onClick={onClick}>はい</Button>
-        <Button onClick={onClick}>いいえ</Button>
+        <Button onClick={onYesClick}>はい</Button>
+        <Button onClick={onNoClick}>いいえ</Button>
       </DialogActions>
     </Dialog>
   );
