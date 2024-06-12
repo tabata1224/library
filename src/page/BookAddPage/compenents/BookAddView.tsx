@@ -1,6 +1,7 @@
 import { InputAdornment, Stack, TextField, Typography } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import ToshoHeader from "../../../components/ToshoHeader";
+import AddBookForm from "../../../components/BookRegistration";
 
 function BookAddView() {
   return (
@@ -25,6 +26,7 @@ function BookAddView() {
           }}
         />
       </Stack>
+      <AddBookForm />
     </>
   );
 }
